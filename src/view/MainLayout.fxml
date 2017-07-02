@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="MainLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.MainLayoutController">
+  <children>
+    <Label fx:id="MainLayoutToastLabel" contentDisplay="CENTER" layoutX="200.0" layoutY="275.0" minHeight="50.0" minWidth="400.0" prefWidth="5.0" text="" textAlignment="CENTER" visible="false" />
+    <TabPane fx:id="MainLaoyoutTabPane" layoutX="0.0" layoutY="0.0" prefHeight="536.0" prefWidth="814.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab fx:id="MainLayoutOrderTab" text="Upcoming Orders">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="512.0" prefWidth="800.0" />
+          </content>
+        </Tab>
+        <Tab fx:id="MainLayoutCustomerTab" text="Customer List">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          </content>
+        </Tab>
+        <Tab fx:id="MainLayoutMeasurementTab" text="Measurement List">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <fx:include fx:id="MainLayoutTab3" source="MainLayoutTab3.fxml" layoutX="0.0" layoutY="-2.0" prefHeight="400.0" prefWidth="800.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>
